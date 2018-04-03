@@ -1,4 +1,11 @@
 package com.codility;
+/** 
+ * 
+ * 
+ * @author derya
+ * 
+ * 
+ * */
 //%100
 public class FrogRiverOne {
 	

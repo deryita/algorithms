@@ -1,5 +1,12 @@
 package com.codility;
 
+/** 
+ * 
+ * 
+ * @author derya
+ * 
+ * 
+ * */
 public class ArrayOfCounters {
 	public static int[] makeArrayOfCounter(int A[]) {
 		int counter[] = new int[A.length+1];

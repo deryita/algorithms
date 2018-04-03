@@ -1,14 +1,20 @@
 package com.codility;
 
-	import java.util.ArrayList;
-	import java.util.List;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CyclicRotation {
 
 	public static int[] solution(int[] A, int K) {
-        // write your code in Java SE 8
-		if (K >= 0 && K <= A.length && A.length > 0)
+		// write your code in Java SE 8
+		if (A.length <= 1)
+			return A;
+
+	   return A;
+		//%75 solution
+	/*	if (K >= 0 && K <= A.length && A.length > 0)
 		{
+			Arrays.sort(A);
 			List<Integer> listA = new ArrayList<Integer>();
 			List<Integer> listB = new ArrayList<Integer>();
 			List<Integer> rotated = new ArrayList<Integer>();
@@ -28,15 +34,16 @@ public class CyclicRotation {
 			    }
 			    A = ret;
 		}
-		return A;
+		return A;*/
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] A = { 1, 2, 3, 4, 5, 6 };
-		int K = 2;
-		int[] C = solution(A, K);
-		System.out.println(C);
+		int[] A = { 4,3,0,0,8,11 };
+		int[] C = solution(A, 5);
+		for (int i = 0 ; i < C.length; i++) {
+			System.out.println(C[i]);
+		}
 	}
 
 }
